@@ -1,0 +1,28 @@
+body {
+    font-family: Arial sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.btn-lg {
+    margin: 30px auto;
+}
+
+#button-delete {
+    background-color: #d42222;
+}
+
+a {
+    text-decoration: none;
+}
+
+.d-grid {
+    text-align: center;
+}
+
+#notification {
+    text-align: center;
+    color: red;
+}
