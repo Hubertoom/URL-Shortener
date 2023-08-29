@@ -1,9 +1,19 @@
 body {
     font-family: Arial sans-serif;
+    background-image: url("https://www.polyu.edu.hk/its/-/media/department/its/content/it-services/005-content-management-and-web-publishing-services/005-content-magt_url-shortenner.jpg?bc=ffffff&h=1050&w=2000&hash=B76333663AD7B67CEE2696733C7BEFB3");
+    background-size: cover;
 }
 
 h1 {
+    padding-top: 2rem;
     text-align: center;
+}
+
+#header {
+    font-family: Georgia;
+    font-size: 4rem;
+    font-weight: 700;
+    color: black;
 }
 
 .btn-lg {
@@ -14,15 +24,34 @@ h1 {
     background-color: #d42222;
 }
 
-a {
-    text-decoration: none;
-}
-
 .d-grid {
     text-align: center;
 }
 
 #notification {
+    font-size: 2rem;
     text-align: center;
     color: red;
+}
+
+.editButton {
+    margin-left: 5px;
+    font-size: .7rem;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.inputEditedUrl {
+    height: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, li {
+    margin-left: 3rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #d42222;
 }
