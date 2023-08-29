@@ -2,6 +2,8 @@ body {
     font-family: Arial sans-serif;
     background-image: url("https://www.polyu.edu.hk/its/-/media/department/its/content/it-services/005-content-management-and-web-publishing-services/005-content-magt_url-shortenner.jpg?bc=ffffff&h=1050&w=2000&hash=B76333663AD7B67CEE2696733C7BEFB3");
     background-size: cover;
+    background-attachment: fixed;
+
 }
 
 h1 {
@@ -22,6 +24,11 @@ h1 {
 
 #button-delete {
     background-color: #d42222;
+    transition: all .2s ease-in-out;
+}
+
+#button-delete:hover {
+    filter: brightness(90%);
 }
 
 .d-grid {
@@ -29,20 +36,45 @@ h1 {
 }
 
 #notification {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     color: red;
+    display: none;
+    animation: notification .5s ease-in-out;
 }
 
+@keyframes notification {
+    from {
+        opacity: 0;
+        transform: translateY(-1.5rem);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
 .editButton {
-    margin-left: 5px;
+    margin: 5px;
     font-size: .7rem;
     background-color: whitesmoke;
     border-radius: 5px;
 }
 
+.editButton:hover {
+    background-color: limegreen;
+}
+
+.saveButton {
+    background-color: limegreen;
+    margin: 5px;
+    font-size: .9rem;
+    border-radius: 5px;
+}
+
 .inputEditedUrl {
     height: 2rem;
+    border-radius: .5rem;
 }
 
 a {
